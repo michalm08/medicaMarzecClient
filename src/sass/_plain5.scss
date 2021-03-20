@@ -1,0 +1,12 @@
+.plain5Section {
+
+  .elems {
+    display: flex;
+    margin: 1rem;
+    .elem2 {
+      flex: 1;
+      border-bottom: 1px dotted $greyBlue;
+      margin: 0 0.5rem;
+    }
+  }
+}

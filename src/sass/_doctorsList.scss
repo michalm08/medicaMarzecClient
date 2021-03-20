@@ -1,0 +1,13 @@
+.doctorListSection {
+  ul {
+
+    li {
+      display: flex;
+      justify-content: space-between;
+      cursor: auto;
+      .btn{
+        cursor: pointer;
+      }
+    }
+  }
+}

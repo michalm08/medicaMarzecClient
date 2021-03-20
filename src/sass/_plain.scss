@@ -1,0 +1,51 @@
+.plainSection {
+ 
+  .progress {
+    position: relative;
+    width: 80%;
+    height: 1rem;
+    background-color: $lightBlue;
+    border: 2px solid $darkBlue;
+    border-radius: 1rem;
+    margin: auto;
+    margin-bottom: 1rem;
+
+    .circle {
+      position: absolute;
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: $lightBlue;
+      border: 2px solid $darkBlue;
+      border-radius: 50%;
+      top: -6px;
+    }
+
+    .full {
+      background-color: $darkBlue;
+    }
+
+    .num1 {
+      left: calc(10% - 0.75rem);
+    }
+    .num2 {
+      left: calc(30% - 0.75rem);
+    }
+    .num3 {
+      left: calc(50% - 0.75rem);
+    }
+    .num4 {
+      left: calc(70% - 0.75rem);
+    }
+    .num5 {
+      left: calc(90% - 0.75rem);
+    }
+  }
+
+  .back {
+    //stylowanie przyciku
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+    cursor: pointer;
+  }
+}

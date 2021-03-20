@@ -1,0 +1,29 @@
+.pricesSection {
+  ul {
+    i {
+      position: initial;
+      padding: 0;
+      margin-left: 1rem;
+    }
+    li:nth-child(even) {
+      background-color: $myWhite;
+    }
+    li {
+      display: flex;
+      justify-content: space-between;
+      padding: 0.45rem 0.2rem;
+      input {
+        width: 3rem;
+        text-align: center;
+      }
+      input::-webkit-outer-spin-button,
+      input::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+    }
+  }
+}

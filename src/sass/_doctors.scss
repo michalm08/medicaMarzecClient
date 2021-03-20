@@ -1,0 +1,42 @@
+.doctorsSection {
+  ul {
+    margin: 8rem 5rem;
+    padding: 2rem;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px $shadowColor;
+    background-color: white;
+    li {
+      display: flex;
+      list-style-type: none;
+      border-bottom: 2px solid rgb(216, 216, 216);
+      margin: 2rem;
+      padding-bottom: 3rem;
+      img {
+        width: 12rem;
+      }
+      h3 {
+        margin: 5rem 10rem;
+      }
+    }
+    @media (max-width: 1024px) {
+      li {
+        margin: 0;
+        h3 {
+          margin: 0;
+        }
+      }
+    }
+    @media (max-width: 768px) {
+      margin: 5rem 2rem;
+      li {
+        margin-top: 1rem;
+        img {
+          display: none;
+        }
+      }
+    }
+    @media (max-width: 480px) {
+      margin: 5rem 5px;
+    }
+  }
+}

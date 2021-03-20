@@ -1,0 +1,58 @@
+.multiLoggedSection {
+  //sprzalka wroc
+
+
+  .content {
+    // height: 350px;
+    display: flex;
+    .myData,
+    .futureVisits,
+    .pastVisits {
+      margin: 2rem;
+    }
+    .pastVisits,
+    .futureVisits {
+      ul {
+        overflow: scroll;
+
+        height: 14rem;
+        // margin-bottom: 70rem;
+      }
+
+      // background-color: red;
+    }
+
+    h2 {
+      margin-bottom: 1rem;
+      color: $darkBlue;
+    }
+    .myData {
+      h2 {
+        margin-bottom: 0;
+        line-height: 60%;
+        margin-top: 0.5rem;
+      }
+      .edit {
+        cursor: pointer;
+        margin-bottom: 0.6rem;
+      }
+    }
+
+    ul {
+      li {
+        list-style-type: none;
+        margin-bottom: 1rem;
+        // cursor: pointer;
+        &:hover {
+          // color: $darkBlue;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 480px) {
+    .content {
+      margin: 0;
+    }
+  }
+}

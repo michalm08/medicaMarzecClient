@@ -1,0 +1,108 @@
+nav {
+  z-index: 1;
+  position: fixed;
+  top: 0;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  background-color: $navColor;
+  box-shadow: 0px 5px 5px $shadowColor;
+  color: $darkBlue;
+  padding: 1rem;
+  align-items: center;
+  // padding: 1rem 20rem; na duze ekrany cos takiego
+
+  h1 {
+    margin-bottom: 0;
+    // letter-spacing: 2px;
+    cursor: pointer;
+  }
+  a {
+    text-decoration: none;
+  }
+
+  ul {
+    display: flex;
+
+    li {
+      list-style: none;
+      a {
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        color: $darkBlue;
+        @media screen and (max-width: 1024px) {
+          padding: 0.5rem 0.4rem;
+        }
+        @media screen and (max-width: 768px) {
+          padding: 0.5rem 0.2rem;
+        }
+      }
+      .nav_elem {
+        border-bottom: 2px solid transparent;
+        transition: 0.5s;
+        &:hover {
+          border-bottom: 2px solid $midBlue;
+        }
+      }
+
+      .nav_plain {
+        background-color: $lightBlue;
+        color: #eae9f3;
+        border: 2px solid rgba(255, 255, 255, 0);
+        border-radius: 20px;
+        transition: 0.5s;
+        &:hover {
+          border: 2px solid $lightBlue;
+          background-color: $myWhite;
+          color: $darkBlue;
+        }
+      }
+    }
+    .line {
+      border-left: 1px solid $greyBlue;
+    }
+  }
+
+  .bar {
+    width: 290px;
+
+    position: absolute;
+    top: 0;
+    right: 0px;
+    border: 2px solid $darkBlue;
+    // padding: 1rem;
+
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: $greyBlue;
+    background-color: $myWhite;
+
+    ul {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      li {
+        // background-color: green;
+        padding: 1rem 0;
+        width: 100%;
+        border-bottom: 1px solid $greyBlue85p;
+        cursor: pointer;
+        p {
+          margin-left: 0.5rem;
+        }
+      }
+      li:last-child {
+        border-bottom: none;
+      }
+      i {
+        position: absolute;
+        // margin: 1rem 0;
+        right: 0rem;
+        top: 0rem;
+        padding: 1rem 1.5rem 1rem 3rem;
+        cursor: pointer;
+      }
+    }
+  }
+}

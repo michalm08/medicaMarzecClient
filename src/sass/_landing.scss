@@ -1,0 +1,40 @@
+.landingSection {
+  .sharpHero-image {
+    filter: blur(0px);
+  }
+
+  //big buttons
+  .btnBig {
+    display: inline-block;
+
+    width: 18rem;
+    padding: 0.7rem 2rem;
+    border: 2px solid $darkBlue;
+    border-radius: 2rem;
+    color: $myWhite;
+    text-decoration: none;
+    text-align: center;
+    font-size: 1.5rem;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover {
+      background-color: $greyBlue;
+    }
+
+    @media (max-width: 758px) {
+      display: block;
+      margin: 0.5rem 0;
+    }
+
+    // padding: auto;
+  }
+  .btnBig1 {
+    @extend .btnBig;
+    background-color: $greyBlue85p;
+  }
+
+  .btnBig2 {
+    @extend .btnBig;
+    background-color: $lightBlue;
+  }
+}
